@@ -1,0 +1,458 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.page-title{ 
+  font-size: 2em;
+  line-height: 2;
+  background-color: #244855;
+  color: #f7f4f4;
+  width: 100%;
+  text-align: center;
+}
+
+#nav{
+  background-color: #f8e8d3;
+  padding: 30px 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#nav img{
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+
+}
+
+
+#nav .list a{
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+#nav .list a:hover{
+  font-size: 24px;
+}
+
+#nav .list{
+  display: flex;
+  gap: 40px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+#description{
+  padding: 20px 30px;
+}
+
+.top-container{
+  padding: 60px 20px;
+}
+
+.top-container video{
+  grid-column: 1/7;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+}
+
+.top-container .title-container{
+  grid-column: 7/13;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+}
+
+.top-container .title-container h1{
+  font-size: 4em;
+  text-align: center;
+}
+
+.top-container .title-container p{
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.center-container{
+  padding: 30px 20px;
+}
+
+.center-container .my_descr{
+  grid-column: 1/9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 20px;
+  width: 90%;
+}
+
+.center-container .my_descr h2{
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.center-container .my_descr p{
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.center-container #newsfeed{
+  grid-column: 9/13;
+}
+
+
+#newsfeed{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 20px;
+  width: 100%;
+  background-color: #f8e8d3;
+  border-radius: 20px;
+}
+
+#newsfeed h2{
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+
+#newsfeed ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#newsfeed .news ul li{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#newsfeed .news ul li h3{
+  font-size: 1.4em;
+}
+
+#newsfeed .news ul li .news-link{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  background-color: rgb(0, 145, 255);
+  width: 30%;
+  font-weight: 700;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+#newsfeed .news ul li img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+footer{
+  background-color: #f8e8d3;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+footer p{
+  font-size: 1.1em;
+  color: #244855;
+  font-weight: 600;
+}
+
+
+
+footer .footer-links{
+  display: flex;
+  gap: 30px;
+}
+
+footer .footer-links a{
+  text-decoration: none;
+  color: #244855;
+  font-size: 1.3em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+footer .footer-links a:hover{
+  font-size: 1.5em;
+}
+
+table th{
+  font-size: 1.4em;
+}
+
+table td{
+  font-size: 1.3em;
+}
+
+/* Study Page CSS */
+.subjects-container{
+  padding: 60px 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.subjects-container ol li{
+  font-size: 1.6em;
+  line-height: 1.6;
+}
+
+/* Hobby Page Css */
+.hobby-hero{
+  padding: 40px 30px;
+}
+
+.hobby-hero img{
+  grid-column: 1/5;
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  justify-self: center;
+  border-radius: 30px;
+}
+
+.hobby-hero .hobby-description{
+  grid-column: 5/13;
+}
+
+.hobby-hero .hobby-description p{
+  font-size: 1.4em;
+  line-height: 1.6;
+  padding: 30px;
+}
+
+.hobby-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color:#000;
+}
+
+.hobby-list li.hobby-item {
+  background-color:#FBE9D0;
+  padding: 15px;
+  margin: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  width: 30%;
+  text-transform: capitalize;
+}
+
+li.hobby-item:hover {
+  transform: scale(1.1);
+  background-color: #4CAF50;
+  color: white;
+}
+
+.hobbydescr{
+  margin: 4%  20%;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  
+}
+
+
+.hobby-gallery {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.hobby-gallery img {
+  width: 30%;
+  height: 10%;
+  margin: 10px;
+  border-radius: 30px;
+  transition: transform 0.3s;
+  object-fit: cover;
+}
+
+.hobby-gallery img:hover {
+  transform: scale(1.05);
+}
+
+.hobby-gallery h2{
+  color:#000;
+  font-size: 2em;
+}
+
+.hobby-gallery p{
+  font-size: 1.6em;
+  line-height: 1.6;
+}
+.hidden {
+  display: none;
+}
+
+
+.music-container{
+  padding: 30px 20px;
+}
+
+
+.music-container h3{
+ padding: 10px 0;
+ margin-bottom: 10px;
+ font-size: 1.8em;
+}
+
+.music-container p{
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.music-one, .music-two, .music-three{
+  justify-self: center;
+}
+
+.music-container .music-one{
+  grid-column: 1/5;
+}
+
+.music-container img{
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.music-container .music-two{
+  grid-column: 5/9;
+}
+
+.music-container .music-three{
+  grid-column: 9/13;
+}
+
+.music-container .music-four{
+  grid-column: 1/5;
+}
+
+.music-container .music-five{
+  grid-column: 5/9;
+}
+
+.music-container .music-six{
+  grid-column: 9/13;
+}
+
+.music-container video{
+  width: 100%;
+}
+
+#house{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+} 
+
+#house table{
+  width: 80%;
+  height: 50%;
+  text-align: center;
+}
+
+#house h3{
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/* Responsive Design Using Media Queries */
+@media screen and (max-width: 650px) {
+
+  #nav .list{
+    display: none;
+  }
+  .top-container video, .top-container .title-container{
+    grid-column: 1/13;
+  }
+
+  .center-container .my_descr, .center-container #newsfeed{
+    grid-column: 1/13;
+  }
+
+  .center-container .my_descr{
+    width: 100%;
+  }
+
+  footer{
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  footer .footer-links{
+    flex-wrap: wrap;
+  }
+
+  .hobby-hero img, .hobby-hero .hobby-description{
+    grid-column: 1/13;
+    height: 100%;
+  }
+
+  .music-container .music-one,.music-container .music-two,.music-container .music-three,.music-container .music-four, .music-container .music-five,.music-container .music-six{
+    grid-column: 1/13;
+    width: 100%;
+    height: 100%;
+  }
+
+  .music-container .music-one,.music-container .music-two{
+    height: 120%;
+  }
+}
+
+
+
