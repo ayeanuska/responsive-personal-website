@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title> Home Page </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <nav id ="nav">
+        <img src="assets/image/logo.jpeg" alt="anuska's logo">     
+        <div class="list">
+            <a href="index.html">Home</a>
+            <a href="mystudy.html">My Study</a>
+            <a href="myhobbies.html">My Hobbies</a>
+            <a href="mymusic.html">My Music</a>
+            <a href="house.php">My house</a>
+        </div>
+    </nav>
+
+    <main> 
+        <h1 class="page-title"> My Hobbies </h1>
+        <div class="hobby-hero grid">
+            <img src="assets/image/IMG_7976.JPG" alt=" digital content 1">
+            <div class="hobby-description">
+                <p> I'm someone with a deep love for learning and exploring new things. 
+                    My hobbies are all over the map—from knitting and singing to photography and modeling. 
+                    I find joy in every new skill I pick up, even if I'm not a master at any of them. 
+                    For me, it's all about the journey, the adventure, and the thrill of trying something new. 
+                    And you know what? That's perfectly okay! I amm happy with who I am and proud of the balance 
+                    I've found between my passions and my career goals.
+
+                    Each of these brings me a unique kind of joy and allows me to 
+                    express different sides of myself. 
+                    If you're curious to see what I've been up to.
+                    I'd love for you to check a glimpse into my world, full of creativity, fun,
+                    and a little bit of everything I love!
+                </p>
+                </div>
+            </div>
+                   
+        <ul class="hobby-list">
+            <li class="hobby-item" data-hobby="hobby1">Digital content creating</li>
+            <li class="hobby-item" data-hobby="hobby2">Traveling and adventure</li>
+            <li class="hobby-item" data-hobby="hobby3">Singing</li>
+        </ul>   
+
+
+        <div id="hobby1" class="hobby-gallery hidden">
+             <h2>Fashion & Art directing</h2>
+
+             <p class="hobbydescr">
+                I've always had a passion for styling, finding joy
+                 in capturing moments and creating visually pleasing 
+                 projects. Seeing how much others appreciated my work, 
+                 I naturally transitioned into involving myself as an 
+                 art director, model, and content creator.
+             </p>
+             
+                <img src="assets/image/IMG_7407.jpeg" alt="digital content 2">
+                <img src="assets/image/AYE.JPG" alt="digital content 3">
+                <img src="assets/image/IMG_6333.jpeg" alt="digital content 4">
+                <img src="assets/image/potrait.JPG" alt="digital content 5">
+                
+        </div>
+
+        <div id="hobby2" class="hobby-gallery hidden">
+            <h2> Travel & Adventure</h2>
+            
+            <p class="hobbydescr">
+                Traveling and adventure are my go-to hobbies for a thrill, offering 
+                excitement and a break from the ordinary. They keep my spirit alive 
+                and always eager for the next journey.
+
+            </p>
+
+            <img src="assets/image/IMG_0751.jpeg" alt="Travel & adventure Image  3">
+            <img src="assets/image/IMG_0142.JPG" alt=" Trave &adventure Image 1">
+            <img src="assets/image/camping.jpeg" alt="Travel & adventure Image  4">
+            <img src="assets/image/IMG_3516.JPG" alt="Travel & adventure Image  2">
+        </div>
+
+        <div id="hobby3" class="hobby-gallery hidden">
+            <h2>Singing</h2>
+            
+            <p class="hobbydescr">
+                 Singing energises my soul, fuelling me even on the most exhausting days,
+                 and it's one of my favorite comforts.It lifts my spirits and keeps me 
+                 motivated no matter how tough things get.
+            </p>
+            <img src="assets/image/sing1.JPG" alt=" Image 1">
+            <img src="assets/image/sing3.JPG" alt=" Image 2">
+            
+        </div>
+    
+
+
+
+<br>
+</main> 
+
+
+<footer> 
+    <p> &#169; Created By Anuska Shrestha 2024</p>
+
+    <div class="footer-links">
+        <a href ="mailto:ayeanuska@gmail.com">Email</a>
+        <a href ="https://www.linkedin.com/in/anuska-shrestha-065571287">Linkedin</a> 
+        <a href="#nav"> Go Back to the top </a>
+    </div>
+</footer>
+
+
+</body>
+   <script>const hobbies = document.querySelectorAll('.hobby-item');
+        const galleries = document.querySelectorAll('.hobby-gallery');
+        
+        hobbies.forEach(hobby => {
+            hobby.addEventListener('click', () => {
+                // Hide all galleries
+                galleries.forEach(gallery => {
+                    gallery.classList.add('hidden');
+                });
+        
+                // Show the selected hobby's gallery
+                const selectedGallery = document.getElementById(hobby.dataset.hobby);
+                selectedGallery.classList.remove('hidden');
+            });
+        });
+        </script>
+</html>
