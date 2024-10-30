@@ -24,7 +24,7 @@
     </nav>
 
     <h1 class="page-title"> My House</h1>
-    <section id="house">
+git add     <section id="house">
         <h3>Rooms in My House:</h3>
             <?php
             $house = array(
@@ -35,7 +35,7 @@
                 "address"=>"Hornsby"
                 );
             ?>
-        <table border="1">
+        <table border="1.5">
             <tr>
                 <th>Property</th>
                 <th> value </th>
